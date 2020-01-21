@@ -7,7 +7,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
-    @last_transaction = 0 
+    @last_transaction = []
   end
   
   def total
@@ -21,7 +21,7 @@ class CashRegister
     
     if quantity > 1
       counter  = 0
-      @last_transaction += new_total
+      @last_transaction << new_total
       while quantity > counter  
       @items << item
       counter += 1
