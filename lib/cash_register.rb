@@ -27,7 +27,7 @@ class CashRegister
    else 
      @items << item 
    end
-    binding.pry
+    #binding.pry
 end #def end
   
   def apply_discount
