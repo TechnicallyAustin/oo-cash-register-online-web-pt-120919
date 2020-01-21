@@ -48,9 +48,9 @@ end
 
 def void_last_transaction
   @last_transaction.pop
-  @last_transaction.each {|i| sum += i}
-  sum 
-  
+  if @last_transaction.nil?
+    @total = 0 
+  end 
     
   end
   
