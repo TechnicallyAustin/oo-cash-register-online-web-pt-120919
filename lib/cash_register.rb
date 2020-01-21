@@ -27,7 +27,7 @@ class CashRegister
       counter += 1
     end
    else 
-     @last_transaction += @price
+     @last_transaction << @price
      @items << item 
    end
     #binding.pry
