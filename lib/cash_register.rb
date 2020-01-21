@@ -27,7 +27,7 @@ class CashRegister
       counter += 1
     end
    else 
-     @last_transaction << @price
+     @last_transaction << new_total
      @items << item 
    end
     #binding.pry
@@ -47,6 +47,7 @@ end
 end
 
 def void_last_transaction
+  @total -= new_total
   @last_transaction.pop
   if @last_transaction.nil?
     @total = 0 
