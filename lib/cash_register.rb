@@ -47,7 +47,10 @@ end
 end
 
 def void_last_transaction
-  @total - @last_transaction
+  
+  @last_transaction.each {|i| sum += i}
+  sum 
+  
     
   end
   
